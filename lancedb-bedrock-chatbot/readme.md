@@ -1,6 +1,6 @@
 # Chatbot Application
 ## Overview
-This is a chatbot client built using [streamlit](https://streamlit.io). It interacts with the RAG lambda functions and displays inputs and outputs in a chat like interface.  
+This is a chatbot client built using [streamlit](https://streamlit.io). It uses NetApp's Workload Factory Knowledge Bases Vector outputs stored on Amazon FSx for ONTAP filesystem to build a RAG inferencing application that displays inputs and outputs in a chat like interface.  
 
 ## Input
 This is how the chat window looks like:
@@ -70,7 +70,8 @@ docker build -t <image-name> --platform <platform>  .
 ### Run
 Use the following to run the app with docker. replace `<fsx-volume-mount-path>` with the volume mount path that has the LanceDB databases stored. 
 ```
-docker run -e AWS_REGION=<aws-region> -e CHAT_URL='/app/lancedb' -v <fsx-volume-mount-path>:/app/lancedb -p 8501:8501 <image-name>```
+docker run -e AWS_REGION=<aws-region> -e CHAT_URL='/app/lancedb' -v <fsx-volume-mount-path>:/app/lancedb -p 8501:8501 <image-name>
+```
 
 
 
