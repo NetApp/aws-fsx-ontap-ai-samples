@@ -1,0 +1,7 @@
+streamlit
+boto3
+requests-aws4auth
+langchain_aws
+langchain
+langchain_community
+lancedb
