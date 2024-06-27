@@ -1,5 +1,7 @@
 ## AWS FSx ONTAP AI Samples
-This repo includes code samples for 
+This repo includes code samples for using Amazon FSx for NetApp ONTAP to drive better data integration into AI services. 
+
+* [LanceDB, AWS Bedrock Chatbot](./lancedb-bedrock-chatbot/) - This is a chatbot client built using streamlit. It uses NetApp's Workload Factory Knowledge Bases Vector outputs stored on Amazon FSx for ONTAP filesystem to build a RAG inferencing application that displays inputs and outputs in a chat like interface
 
 ## Author Information
 
